@@ -25,6 +25,9 @@ def sent_detection():
     joy = response['joy']
     sadness = response['sadness']
     dominant_emotion = response['dominant_emotion']
+
+    if dominant_emotion == None:
+        return "Invalid text! Please try again!."
     
     # Formatear la respuesta en el formato requerido
     formatted_response = (
